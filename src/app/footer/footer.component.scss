@@ -1,6 +1,7 @@
 /* ========== FOOTER ========== */
 
 .pl__footer {
+    /** General Footer Styles **/
     background-color: #363636;
     color: #fff;
     padding-top: 30px;
@@ -31,19 +32,6 @@
         text-decoration: none;
         color: #fff;
     }
-    .pl__footer__social {
-        text-align: center;
-        padding: 30px 0 16px 0;
-        a {
-            font-size: 32px;
-            color: #f9f9f9;
-            padding: 10px;
-            transition: 0.2s;
-        }
-        a:hover {
-            color: #ffc000;
-        }
-    }
     .btn {
         color: white;
         background-color: rgba(131, 71, 221, 0.8);
@@ -58,6 +46,21 @@
     .btn:hover {
         background: rgba(163, 119, 202, 0.8);
     }
+    /** Footer Social Styles **/
+    .pl__footer__social {
+        text-align: center;
+        padding: 30px 0 16px 0;
+        a {
+            font-size: 32px;
+            color: #f9f9f9;
+            padding: 10px;
+            transition: 0.2s;
+        }
+        a:hover {
+            color: #ffc000;
+        }
+    }
+    /** Footer Copyright styles **/
     .pl__footer__copyright {
         background-color: #ffc000;
         padding-top: 3px;
