@@ -7,9 +7,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  routes;
+
   constructor() { }
 
   ngOnInit() {
+    this.routes = [
+      {
+        route: 'home',
+        name: 'Home'
+      },
+      {
+        route: 'community',
+        name: 'Community'
+      },
+      {
+        route: 'parks',
+        name: 'Theme Parks',
+      },
+      {
+        route: 'mini-games',
+        name: 'Mini Games'
+      },
+      {
+        route: 'creative',
+        name: 'Creative',
+      },
+      {
+        route: 'players',
+        name: 'Players'
+      },
+      {
+        route: 'support',
+        name: 'Help & Support'
+      }
+    ];
   }
 
 }
