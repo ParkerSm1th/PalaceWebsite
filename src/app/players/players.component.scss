@@ -2,46 +2,67 @@
     background-color: #eb0000; /* COLOUR IS FOR VISUAL ONLY */
     color: #fff;
     padding: 30px 0 30px 0;
-}
-  
-        .searchbar{
-        margin-bottom: auto;
-        margin-top: auto;
-        height: 60px;
-        background-color: #353b48;
-        border-radius: 30px;
-        padding: 10px;
-        }
-    
-        .search_input{
-        color: white;
-        border: 0;
-        outline: 0;
-        background: none;
-        width: 0;
-        caret-color:transparent;
-        line-height: 40px;
-        transition: width 0.4s linear;        
-        padding: 0 10px;
-        width: 450px;
-        caret-color: white;
-        transition: width 0.4s linear;
-        }
-            
-        .search_icon{
-        height: 40px;
-        width: 40px;
-        float: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        color: #0a0808;
-        background: white;
-        }
 
-        .content {
-            background-color: #0a0808;
-            padding: 50px 400px 50px 400px;
-            border-radius: 20px;
+    .wrapper {
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            line-height: 36px;
+            height: 36px;
+            color: #FFF;
+            letter-spacing: -2px;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+            float: left;
+            padding-top: 15px;
+
+            em {
+                color: #fff300;
+            }
         }
+    }
+
+    .search_background {
+        background-color: #2f00ff; /* COLOUR IS FOR VISUAL ONLY WILL BE AN IMAGE*/
+        padding-top: 70px;
+        border-radius: 20px;
+        width: 1000px;
+        height: 200px;
+
+        .searchbar {
+            margin-bottom: auto;
+            margin-top: auto;
+            height: 60px;
+            background-color: #353b48;
+            border-radius: 30px;
+            padding: 10px;
+
+            .search_input {
+                color: white;
+                border: 0;
+                outline: 0;
+                background: none;
+                width: 0;
+                caret-color:transparent;
+                line-height: 40px;
+                transition: width 0.4s linear;        
+                padding: 0 10px;
+                width: 450px;
+                caret-color: white;
+                transition: width 0.4s linear;
+            }
+
+            .search_icon {
+                height: 40px;
+                width: 40px;
+                float: right;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: #0a0808;
+                background: white;
+            }
+        }
+    }
+}
