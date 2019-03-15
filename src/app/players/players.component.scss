@@ -1,6 +1,6 @@
 .pl__players {
-    background-color: #eb0000; /* COLOUR IS FOR VISUAL ONLY */
-    color: #fff;
+    // background-color: #eb0000; /* COLOUR IS FOR VISUAL ONLY */
+    color: rgb(0, 0, 0);
     padding: 30px 0 30px 0;
 
     .wrapper {
@@ -64,5 +64,9 @@
                 background: white;
             }
         }
+    }
+
+    .card-body {
+      border-top: 2px solid rgba(131, 71, 221, 0.8);
     }
 }
