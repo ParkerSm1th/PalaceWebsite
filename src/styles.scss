@@ -7,4 +7,20 @@ body {
     padding: 0;
     line-height: 1.5;
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(230, 236, 240);
+    overflow-x: hidden;
+}
+.pl__section__header {
+    color: white;
+    background-color: #feca57;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 1px 3px #1F1F1F;
+    border: none;
+    width: 200px;
+    display: block;
+    margin: 30px 0 15px 0;
+    line-height: 43px;
 }

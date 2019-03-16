@@ -47,4 +47,83 @@
     max-width: 100%;
     height: 339px;
     background-color: #ffb500;
+    border-bottom: 3px solid #ffb500;
+    background: url('../../assets/pl_jumbo_bg.png');
+    text-align: center;
+    color: #fefefe;
+    .pl__jumbotron__logo {
+        margin: 2em auto;
+        padding: 1em 2em;
+        height: 250px;
+        width: 353px;
+        filter: drop-shadow(2px 5px 10px rgb(250,226,127));
+    }
+    .pl__jumbotron__play-section {
+        margin: 4em auto;
+        padding: 1em 0.5em;
+        max-width: 100%;  
+        p {
+            padding: 5px 10px;
+            text-shadow: 0 1px 3px #1F1F1F;
+            span {
+                font-weight: bold;
+                color: #ffb500;
+            }
+        }
+        .btn {
+            color: white;
+            background-color: #00aeef;
+            border-radius: 20px;
+            border: none;
+            width: 200px;
+            display: block;
+            margin: 40px auto;
+            line-height: 25px;
+        }
+        .btn:hover {
+            background: #019dd6;
+        }
+    }
+    .pl__radio__container {
+        margin: 5em auto;
+        max-width: 100%;
+        padding: 1em 2em;
+        color: #fefefe;
+        text-shadow: 0 1px 3px #1F1F1F;
+        .pl__radio__aa {
+            height: 130px;
+            width: 130px;
+            border: 2px solid #fff;
+        }
+        .pl__radio__dj {
+            position: absolute;
+            margin-right: 16px;
+            margin-left: 12px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+        .pl__radio__current-track {
+            position: absolute;
+            max-width: 100%;
+            width: 350px;
+            font-size: 12px;
+            top: 126px;
+            left: 217px;
+            span {
+                font-weight: bold;
+            }
+        }
+        .pl__radio__user-count {
+            position: absolute;
+            font-size: 12px;
+            width: 350px;
+            max-width: 100%;
+            top: 141px;
+            left: 191px;
+            font-weight: bold;
+            span {
+                color: #ffb500;
+            }
+        }
+    }
 }
