@@ -10,25 +10,35 @@
   </div>
 </header>
 <div class="pl__jumbotron">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col pl__jumbotron__play-section">
         <p class="pl__jumbotron__ip">IP Address: <span>play.palace.network</span></p>
         <button class="btn"[routerLink]="['play']">Click Here to Play!</button>
         <p>There are currently <span>2,182</span> guests online!</p>
       </div>
-      <div class="col"><img class="pl__jumbotron__logo" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></div>
-      <div class="col">
-        <div class="pl__radio__container">
+      <div class="col"><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></div>
+      <div class="col pl__jumbotron__radio-section">
+        <div class="container pl__radio__container">
+          <div class="row">
+            <div class="col-md-3"><img class="pl__radio__aa"></div>
+            <div class="col-md-6">
+              <h2 class="pl__radio__dj">DJ Brant</h2>
+              <p class="pl__radio__current-track">Currently playing: <span>Abstract - Scars (ft. RoZe)</span></p>
+              <p class="pl__radio__user-count">There are currently <span>149</span> listeners.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="pl__radio__container">
           <img class="pl__radio__aa">
           <span class="pl__radio__dj">DJ Brant</span>
           <p class="pl__radio__current-track">Currently playing: <span>Abstract - Scars (ft. RoZe)</span></p>
           <p class="pl__radio__user-count">There are currently <span>149</span> listeners.</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </div>
 <div class="alert alert-danger">
-    <p>WORK IN PROGRESS: The content presented on this website does not represent the final product</p>
+    <p style="text-align:center">WORK IN PROGRESS: The content presented on this website does not represent the final product</p>
 </div>

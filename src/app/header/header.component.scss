@@ -50,7 +50,8 @@
     background-color: #ffb500;
     border-bottom: 3px solid #ffb500;
     background: url('../../assets/Header_Component_Images/pl_jumbo_bg.png');
-    text-align: center;
+    background-size: cover;
+    // text-align: center;
     color: #fefefe;
     .pl__jumbotron__logo {
         margin: 2em auto;
@@ -62,7 +63,8 @@
     .pl__jumbotron__play-section {
         margin: 4em auto;
         padding: 1em 0.5em;
-        max-width: 100%;  
+        max-width: 100%;
+        text-align: center;
         p {
             padding: 5px 10px;
             text-shadow: 0 1px 3px #1F1F1F;
@@ -85,46 +87,78 @@
             background: #019dd6;
         }
     }
-    .pl__radio__container {
+    .pl__jumbotron__radio-section {
         margin: 5em auto;
         max-width: 100%;
         padding: 1em 2em;
-        color: #fefefe;
-        text-shadow: 0 1px 3px #1F1F1F;
-        .pl__radio__aa {
-            height: 130px;
-            width: 130px;
-            border: 2px solid #fff;
-        }
-        .pl__radio__dj {
-            position: absolute;
-            margin-right: 16px;
-            margin-left: 12px;
-            font-size: 21px;
-            font-weight: bold;
-        }
-        .pl__radio__current-track {
-            position: absolute;
-            max-width: 100%;
-            width: 350px;
-            font-size: 12px;
-            top: 126px;
-            left: 217px;
-            span {
+        .pl__radio__container {
+            width: auto;
+            .pl__radio__aa {
+                height: 130px;
+                width: 130px;
+                border: 2px solid #fff;
+            }
+            .pl__radio__dj {
+                font-size: 21px;
                 font-weight: bold;
             }
-        }
-        .pl__radio__user-count {
-            position: absolute;
-            font-size: 12px;
-            width: 350px;
-            max-width: 100%;
-            top: 141px;
-            left: 191px;
-            font-weight: bold;
-            span {
-                color: #ffb500;
+            .pl__radio__current-track {
+                max-width: 100%;
+                width: 300px;
+                font-size: 12px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .pl__radio__user-count {
+                font-size: 12px;
+                font-weight: bold;
+                span {
+                    color: #ffb500;
+                }
             }
         }
     }
+    // .pl__radio__container {
+    //     margin: 5em auto;
+    //     max-width: 100%;
+    //     padding: 1em 2em;
+    //     color: #fefefe;
+    //     text-shadow: 0 1px 3px #1F1F1F;
+    //     .pl__radio__aa {
+    //         height: 130px;
+    //         width: 130px;
+    //         border: 2px solid #fff;
+    //     }
+    //     .pl__radio__dj {
+    //         position: absolute;
+    //         margin-right: 16px;
+    //         margin-left: 12px;
+    //         font-size: 21px;
+    //         font-weight: bold;
+    //     }
+    //     .pl__radio__current-track {
+    //         position: absolute;
+    //         max-width: 100%;
+    //         width: 350px;
+    //         font-size: 12px;
+    //         top: 126px;
+    //         left: 217px;
+    //         span {
+    //             font-weight: bold;
+    //         }
+    //     }
+    //     .pl__radio__user-count {
+    //         position: absolute;
+    //         font-size: 12px;
+    //         width: 350px;
+    //         max-width: 100%;
+    //         top: 141px;
+    //         left: 191px;
+    //         font-weight: bold;
+    //         span {
+    //             color: #ffb500;
+    //         }
+    //     }
+    // }
 }
