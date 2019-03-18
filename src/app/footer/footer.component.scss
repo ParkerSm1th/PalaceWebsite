@@ -1,5 +1,4 @@
 /* ========== FOOTER ========== */
-
 .pl__footer {
     /** General Footer Styles **/
     background-color: #363636;
@@ -62,14 +61,15 @@
     }
     /** Footer Copyright styles **/
     .pl__footer__copyright {
-        background-color: #ffc000;
+        background-color: rgb(230, 236, 240);
         padding-top: 3px;
+        max-width: 100%;
         padding-bottom: 3px;
         text-align: center;
+        border-top: 4px solid #ffc000;
         p {
-            width: 100%;
-            float: left;
-            margin: 10px;
+            text-align: center;
+            margin: 10px auto;
             color: rgb(0, 0, 0);
             font-weight: bold;
         }
