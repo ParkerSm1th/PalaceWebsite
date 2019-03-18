@@ -10,7 +10,7 @@ body {
     background-color: rgb(230, 236, 240);
     // overflow-x: hidden;
 }
-.pl__section__header {
+%pl__section__header--global {
     color: white;
     background-color: #feca57;
     border-radius: 30px;
@@ -23,4 +23,27 @@ body {
     display: block;
     margin: 30px 0 15px 0;
     line-height: 43px;
+}
+.pl__section__header {
+    @extend %pl__section__header--global
+}
+.alt {
+    @extend %pl__section__header--global;
+    width: 300px;
+}
+.blue {
+    @extend %pl__section__header--global;
+    background-color: #45aaf2;
+}
+.red {
+    @extend %pl__section__header--global;
+    background-color: #ff6b6b;
+}
+.pl__activity-feed {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    height: 500px;
+    max-width: 422px;
+    background-color: #f3f3f3;
 }
