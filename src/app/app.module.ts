@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MinecraftComponent } from './minecraft/minecraft.component';
 import { PlayersComponent } from './players/players.component';
+import { PlayersSearchComponent } from './players-search/players-search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PlayersComponent } from './players/players.component';
     FooterComponent,
     HomeComponent,
     MinecraftComponent,
-    PlayersComponent
+    PlayersComponent,
+    PlayersSearchComponent
   ],
   imports: [
     BrowserModule,
