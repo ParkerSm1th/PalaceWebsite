@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'pl-header',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   routes;
+  faInfoCircle = faInfoCircle;
 
   constructor() { }
 
