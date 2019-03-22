@@ -1,25 +1,115 @@
-.search_players {
+.profile {
     padding-bottom: 20px
 }
 
 .header {
-    position: relative;
-    margin: 0 auto;
+    height: 210px;
     width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
+    margin: 0 0 40px 0;
+    width: 100%;
     background: #202020;
 }
 
 .avatar {
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-left: 60px;
-    margin-bottom: 15px;
+    margin-top: 40px; /* WORK OUT CENTRE OF HEAD FOR AVATAR POSITION*/
+    margin-left: 60px; /* WORK OUT CENTRE OF HEAD FOR AVATAR POSITION*/
+    margin-bottom: 40px; /* WORK OUT CENTRE OF HEAD FOR AVATAR POSITION*/
     float: left;
     width: 128px;
     height: 128px;
     border-radius: 10px;
-    overflow: hidden;
+}
+
+.header .overview {
+    width: 700px;
+}
+
+.header .overview .info {
+    width: 250px; //500
+    margin: 50px 0 0 10px; /* WORK OUT POSITIONING FOR INFORMATION AREA IE RANK AND NAME*/
+    float: left;
+}
+
+.header .overview .info h1 {
+    width: 100%;
+    line-height: 45px;
+    font-size: 36px;
+    color: #FFF;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+    float: left;
+}
+
+.header .overview .info p.rank {
+    height: 32px;
+    line-height: 32px;
+    color: #FFF;
+    font-size: 20px;
+    // letter-spacing: -1px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    padding: 0 12px 0 12px;
+    background: #00AAAA;
+    float: left;
+    border-radius: 20px;
+}
+
+.header .overview .info p.rank.creator {
+    background: #5555FF;
+    margin-left: 5px;
+}
+
+.header .overview .info p.rank.dweller {
+    background: #55FFFF;
+}
+
+.header .overview .info p.rank.noble {
+    background: #5555FF;
+}
+
+.header .overview .info p.rank.majestic {
+    background: #AA00AA;
+}
+
+.header .overview .info p.rank.honorable {
+    background: #FF55FF;
+}
+
+.header .overview .info p.rank.sg {
+    background: #AA00AA;
+}
+
+.header .overview .info p.rank.trainee {
+    background: #00AA00;
+}
+
+.header .overview .info p.rank.traineebuild {
+    background: #00AA00;
+}
+
+.header .overview .info p.rank.mod {
+    background: #55FF55;
+}
+
+.header .overview .info p.rank.builder {
+    background: #55FF55;
+}
+
+.header .overview .info p.rank.srmod {
+    background: #FFFF55;
+}
+
+.header .overview .info p.rank.architect {
+    background: #FFFF55;
+}
+
+.header .overview .info p.rank.developer {
+    background: #FFAA00;
+}
+
+.header .overview .info p.rank.admin {
+    background: #FF5555;
+}
+
+.header .overview .info p.rank.manager {
+    background: #AA0000;
 }
