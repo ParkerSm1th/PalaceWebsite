@@ -6,14 +6,13 @@
     height: 210px;
     width: 100%;
     margin: 0 0 40px 0;
-    width: 100%;
     background: #202020;
 }
 
 .avatar {
-    margin-top: 40px; /* WORK OUT CENTRE OF HEAD FOR AVATAR POSITION*/
-    margin-left: 60px; /* WORK OUT CENTRE OF HEAD FOR AVATAR POSITION*/
-    margin-bottom: 40px; /* WORK OUT CENTRE OF HEAD FOR AVATAR POSITION*/
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 40px;
     float: left;
     width: 128px;
     height: 128px;
@@ -22,11 +21,12 @@
 
 .header .overview {
     width: 700px;
+    // padding-left: 300px; ONLY USED WHEN CONTAINER DISABLED
 }
 
 .header .overview .info {
     width: 250px; //500
-    margin: 50px 0 0 10px; /* WORK OUT POSITIONING FOR INFORMATION AREA IE RANK AND NAME*/
+    margin: 50px 0 0 10px;
     float: left;
 }
 
@@ -45,7 +45,6 @@
     line-height: 32px;
     color: #FFF;
     font-size: 20px;
-    // letter-spacing: -1px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     padding: 0 12px 0 12px;
     background: #00AAAA;
@@ -112,4 +111,69 @@
 
 .header .overview .info p.rank.manager {
     background: #AA0000;
+}
+
+// .header .status-box {
+//     padding-right: 300px; ONLY USED WHEN CONTAINER DISABLED
+// }
+
+.header .status {
+    height: 72px;
+    padding: 0 20px 0 20px;
+    margin: 69px 60px 0 0;
+    position: relative;
+    float: right;
+    background: #646464;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header .status.online {
+    padding: 0 60px 0 20px;
+    background: #37b62b;
+}
+
+.header .status h4 {
+    margin: 15px 0 0 0;
+    height: 20px;
+    line-height: 20px;
+    color: #FFF;
+    font-size: 18px;
+    float: left;
+}
+
+.header .status p {
+    width: auto;
+    clear: both;
+    color: #c0c0c0;
+    float: left;
+}
+
+.header .status.online p {
+    color: #ffc000;
+}
+
+@keyframes online-pulse {
+    0% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.25;
+    }
+}
+
+.header .status.online::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    background: #b5eb53e5;
+    border-radius: 9px;
+    animation: online-pulse 2s infinite;
 }
