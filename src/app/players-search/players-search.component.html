@@ -20,19 +20,65 @@
          </div>
       </div>
    </div>
-   <div class="container">
-      <div class="honor-points">
-         <div class="d-flex justify-content-end">
-            <div class="pie-wrapper progress-45 background">
-               <span class="level">45<span class="smaller">%</span></span>
-               <div class="pie">
-                  <div class="left-side half-circle"></div>
-                  <div class="right-side half-circle"></div>
+
+   <mat-tab-group mat-align-tabs="center">
+      <mat-tab label="Statistics">
+         <div class="profileContent">
+         <h2>General Stats</h2>
+         <div class="generalStats d-flex justify-content-start">
+            <div class="statsSection">
+               <div class="statRow">
+                  <dl>
+                     <dt>Honor Points</dt>
+                     <dd>1,000</dd>
+                  </dl>
+                  <dl>
+                     <dt>Friends</dt>
+                     <dd>2,000</dd>
+                  </dl>
+                  <dl>
+                     <dt>Achievements</dt>
+                     <dd>3,000</dd>
+                  </dl>
+                  <dl>
+                     <dt>Parkours Completed</dt>
+                     <dd>4,000</dd>
+                  </dl>
                </div>
-               <div class="shadow"></div>
+               <div class="statRow">
+                     <dl>
+                        <dt>Ride Riden</dt>
+                        <dd>156</dd>
+                     </dl>
+                     <dl>
+                        <dt>Online Time</dt>
+                        <dd>4d 6h 6m</dd>
+                     </dl>
+                  </div>
+               </div>
+               <div class="parkSection d-flex justify-content-end">
+                  <h2>Park Stats</h2>
+               </div>
+            </div>
+            </div>
+      </mat-tab>
+      <mat-tab label="Second">
+         <div class="container">
+            <div class="honor-points">
+               <div class="d-flex justify-content-end">
+                  <div class="pie-wrapper progress-45 background">
+                     <span class="level">45<span class="smaller">%</span></span>
+                     <div class="pie">
+                        <div class="left-side half-circle"></div>
+                        <div class="right-side half-circle"></div>
+                     </div>
+                     <div class="shadow"></div>
+                  </div>
+               </div>
             </div>
          </div>
-      </div>
-   </div>
+      </mat-tab>
+      <mat-tab label="Third">Content 3</mat-tab>
+    </mat-tab-group>
    <!-- </div> -->
 </div>

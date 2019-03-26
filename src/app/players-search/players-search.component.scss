@@ -276,5 +276,44 @@
     @include draw-progress(45, #1abc9c);
   }
 }
+.profileContent {
+	padding-left: 45px;
+	padding-top: 0
+}
 
+.profileContent h2 {
+	font-size: 22px;
+	font-weight: 400;
+	color: #343637;
+	margin-bottom: 7px;
+	font-family: Neuton, Times
+}
+
+.statsSection {
+	width: 49%;
+	_float: left;
+	display: inline-block
+}
+
+.statsSection dt,
+.statsSection dd {
+	float: left;
+	width: 50%;
+	font-size: 13px
+}
+
+.statsSection dl {
+	color: #5d6165
+}
+
+.statsSection dd {
+	text-align: right;
+	color: #5d6165;
+	font-weight: 700
+}
+
+.statRow {
+	padding-right: 45px;
+	line-height: 30px
+}
 }
