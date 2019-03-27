@@ -15,7 +15,8 @@ import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule
 	MatIconModule, MatTableModule, MatSortModule, MatBadgeModule,
 	MatPaginatorModule, MatTabsModule, MatDatepickerModule, MatNativeDateModule,
 	MatCardModule, MatDividerModule, MatChipsModule, MatProgressSpinnerModule, MatButtonModule,
-	MatDialogModule, MatListModule } from '@angular/material';
+	MatDialogModule, MatListModule, MatGridListModule } from '@angular/material';
+import { PlayComponent } from './play/play.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule
     FooterComponent,
     HomeComponent,
     PlayersComponent,
-    PlayersSearchComponent
+    PlayersSearchComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +53,7 @@ import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule
 		MatButtonModule,
 		MatDialogModule,
 		MatListModule,
+		MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
