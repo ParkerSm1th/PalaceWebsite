@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'pl-players',
@@ -8,8 +9,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class PlayersComponent implements OnInit {
 
-   faSearch = faSearch;
-   
+  faSearch = faSearch;
+
   constructor() { }
 
   ngOnInit() {
