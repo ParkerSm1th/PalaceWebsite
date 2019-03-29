@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,13 @@ import { HomeComponent } from './home/home.component';
 import { PlayersComponent } from './players/players.component';
 import { PlayersSearchComponent } from './players-search/players-search.component';
 
+import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule,
+	MatIconModule, MatTableModule, MatSortModule, MatBadgeModule,
+	MatPaginatorModule, MatTabsModule, MatDatepickerModule, MatNativeDateModule,
+	MatCardModule, MatDividerModule, MatChipsModule, MatProgressSpinnerModule, MatButtonModule,
+	MatDialogModule, MatListModule, MatGridListModule } from '@angular/material';
+import { PlayComponent } from './play/play.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +25,35 @@ import { PlayersSearchComponent } from './players-search/players-search.componen
     FooterComponent,
     HomeComponent,
     PlayersComponent,
-    PlayersSearchComponent
+    PlayersSearchComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule,
+		MatTooltipModule,
+		MatFormFieldModule,
+		MatInputModule,
+		MatIconModule,
+		MatTableModule,
+		MatSortModule,
+		MatBadgeModule,
+		MatPaginatorModule,
+		MatTabsModule,
+		MatDatepickerModule,
+		MatInputModule,
+		MatNativeDateModule,
+		MatCardModule,
+		MatDividerModule,
+		MatChipsModule,
+		MatProgressSpinnerModule,
+		MatButtonModule,
+		MatDialogModule,
+		MatListModule,
+		MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,8 @@ import { faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  copyright: string;
+  year: number;
 
   faTwitterSquare = faTwitterSquare;
   faFacebookSquare = faFacebookSquare;
@@ -19,6 +21,8 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.copyright = "Copyright &copy; Palace Network";
+    this.year = Date.now();
   }
 
 }

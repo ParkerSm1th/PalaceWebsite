@@ -1,179 +1,200 @@
 .profile {
-    padding-bottom: 20px
-}
-
-.header {
-    height: 210px;
-    width: 100%;
-    margin: 0 0 40px 0;
-    background: #202020;
-}
-
-.avatar {
-    margin-top: 40px;
-    margin-left: 60px;
-    margin-bottom: 40px;
-    float: left;
-    width: 128px;
-    height: 128px;
-    border-radius: 10px;
-}
-
-.header .overview {
-    width: 700px;
-    // padding-left: 300px; ONLY USED WHEN CONTAINER DISABLED
-}
-
-.header .overview .info {
-    width: 250px; //500
-    margin: 50px 0 0 10px;
-    float: left;
-}
-
-.header .overview .info h1 {
-    width: 100%;
-    line-height: 45px;
-    font-size: 36px;
-    color: #FFF;
-    letter-spacing: -1px;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
-    float: left;
-}
-
-.header .overview .info p.rank {
-    height: 32px;
-    line-height: 32px;
-    color: #FFF;
-    font-size: 20px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-    padding: 0 12px 0 12px;
-    background: #00AAAA;
-    float: left;
-    border-radius: 20px;
-}
-
-.header .overview .info p.rank.creator {
-    background: #5555FF;
-    margin-left: 5px;
-}
-
-.header .overview .info p.rank.dweller {
-    background: #55FFFF;
-}
-
-.header .overview .info p.rank.noble {
-    background: #5555FF;
-}
-
-.header .overview .info p.rank.majestic {
-    background: #AA00AA;
-}
-
-.header .overview .info p.rank.honorable {
-    background: #FF55FF;
-}
-
-.header .overview .info p.rank.sg {
-    background: #AA00AA;
-}
-
-.header .overview .info p.rank.trainee {
-    background: #00AA00;
-}
-
-.header .overview .info p.rank.traineebuild {
-    background: #00AA00;
-}
-
-.header .overview .info p.rank.mod {
-    background: #55FF55;
-}
-
-.header .overview .info p.rank.builder {
-    background: #55FF55;
-}
-
-.header .overview .info p.rank.srmod {
-    background: #FFFF55;
-}
-
-.header .overview .info p.rank.architect {
-    background: #FFFF55;
-}
-
-.header .overview .info p.rank.developer {
-    background: #FFAA00;
-}
-
-.header .overview .info p.rank.admin {
-    background: #FF5555;
-}
-
-.header .overview .info p.rank.manager {
-    background: #AA0000;
-}
-
-// .header .status-box {
-//     padding-right: 300px; ONLY USED WHEN CONTAINER DISABLED
-// }
-
-.header .status {
-    height: 72px;
-    padding: 0 20px 0 20px;
-    margin: 69px 60px 0 0;
-    position: relative;
-    float: right;
-    background: #646464;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.header .status.online {
-    padding: 0 60px 0 20px;
-    background: #37b62b;
-}
-
-.header .status h4 {
-    margin: 15px 0 0 0;
-    height: 20px;
-    line-height: 20px;
-    color: #FFF;
-    font-size: 18px;
-    float: left;
-}
-
-.header .status p {
-    width: auto;
-    clear: both;
-    color: #c0c0c0;
-    float: left;
-}
-
-.header .status.online p {
-    color: #ffc000;
-}
-
-@keyframes online-pulse {
-    0% {
-        opacity: 0.25;
+    padding-bottom: 20px;
+    .header {
+        height: 210px;
+        width: 100%;
+        margin: 0 0 40px 0;
+        background: url(../../assets/Player_Component_Images/player_search.png) top center no-repeat #202020;
+        .overview {
+            width: 700px;
+            padding-left: 300px; //ONLY USED WHEN CONTAINER DISABLED
+            .avatar {
+                margin-top: 40px;
+                margin-left: 60px;
+                margin-bottom: 40px;
+                float: left;
+                img {
+                    float: inherit;
+                    width: 128px;
+                    height: 128px;
+                    border-radius: 10px;
+                }
+            }
+            .info {
+                width: 250px; //500
+                margin: 50px 0 0 10px;
+                float: left;
+                h1 {
+                    width: 100%;
+                    line-height: 45px;
+                    font-size: 36px;
+                    color: #FFF;
+                    letter-spacing: -1px;
+                    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+                    float: left;
+                }
+                p.rank {
+                    height: 32px;
+                    line-height: 32px;
+                    color: #FFF;
+                    font-size: 20px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+                    padding: 0 12px 0 12px;
+                    background: #00AAAA;
+                    float: left;
+                    border-radius: 20px;
+                    &.creator {
+                        background: #5555FF;
+                        margin-left: 5px;
+                    }
+                    &.dweller {
+                        background: #55FFFF;
+                    }
+                    &.noble {
+                        background: #5555FF;
+                    }
+                    &.majestic {
+                        background: #AA00AA;
+                    }
+                    &.honorable {
+                        background: #FF55FF;
+                    }
+                    &.sg {
+                        background: #AA00AA;
+                    }
+                    &.trainee {
+                        background: #00AA00;
+                    }
+                    &.traineebuild {
+                        background: #00AA00;
+                    }
+                    &.mod {
+                        background: #55FF55;
+                    }
+                    &.builder {
+                        background: #55FF55;
+                    }
+                    &.srmod {
+                        background: #FFFF55;
+                    }
+                    &.architect {
+                        background: #FFFF55;
+                    }
+                    &.developer {
+                        background: #FFAA00;
+                    }
+                    &.admin {
+                        background: #FF5555;
+                    }
+                    &.manager {
+                        background: #AA0000;
+                    }
+                }
+            }
+        }
+        .status-box {
+            padding-right: 300px; //ONLY USED WHEN CONTAINER DISABLED
+            .status {
+                height: 72px;
+                padding: 0 20px 0 20px;
+                margin: 69px 60px 0 0;
+                position: relative;
+                float: right;
+                background: #646464;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+                border-radius: 20px;
+                overflow: hidden;
+                &.online {
+                    padding: 0 60px 0 20px;
+                    background: #37b62b;
+                    p {
+                        color: #ffc000;
+                    }
+                    &::after {
+                        content: '';
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        top: 27px;
+                        right: 20px;
+                        background: #b5eb53e5;
+                        border-radius: 9px;
+                        animation: online-pulse 2s infinite;
+                    }
+                    @keyframes online-pulse {
+                        0% {
+                            opacity: 0.25;
+                        }
+                        50% {
+                            opacity: 1;
+                        }
+                        100% {
+                            opacity: 0.25;
+                        }
+                    }
+                }
+                h4 {
+                    margin: 15px 0 0 0;
+                    height: 20px;
+                    line-height: 20px;
+                    color: #FFF;
+                    font-size: 18px;
+                    float: left;
+                }
+                p {
+                    width: auto;
+                    clear: both;
+                    color: #c0c0c0;
+                    float: left;  
+                }
+            }
+        }
     }
-    50% {
-        opacity: 1;
+/* =============== First Page - Statistics ===============*/
+/* ===== General =====*/
+.profileContent {
+	padding-left: 45px;
+  padding-top: 0;
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #343637;
+    margin-bottom: 7px;
+  }
+  .statsSection {
+    width: 49%;
+    _float: left;
+    display: inline-block;
+    .statRow {
+      padding-right: 45px;
+      line-height: 30px;
+      dl {
+        color: #5d6165;
+        dt, dd {
+          float: left;
+          width: 50%;
+          font-size: 13px
+        }
+        dd {
+          text-align: right;
+          color: #5d6165;
+          font-weight: 700
+        }
+      }
     }
-    100% {
-        opacity: 0.25;
-    }
-}
+  }
+/* ===== Achievements =====*/
 
-.header .status.online::after {
-    content: '';
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 27px;
-    right: 20px;
-    background: #b5eb53e5;
-    border-radius: 9px;
-    animation: online-pulse 2s infinite;
+
+
+
+
+} //End of General Styles
+
+
+/* =============== Second Page - Parks ===============*/
+
+
+/* =============== Second Page - Arcade ===============*/
+
 }

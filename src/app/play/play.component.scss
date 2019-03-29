@@ -1,0 +1,141 @@
+//Possible issues are to do with the floats left and right. Could be too many!
+
+/* ========== GENERAL PAGE STYLES ==========*/
+hr {
+    height: 20px;
+  }
+  
+  p {
+    width: 100%;
+    float: left;
+  }
+  
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all .1s;
+  }
+
+    /* ========== PAGE HEADER AREA ==========*/
+.minecraft {
+    width: 100%;
+    margin: 1px 0 0;
+    .header {
+        width: 100%;
+        background: #161616;
+        height: 134px;
+        float: left;
+        .info {
+            width: 800px;
+            margin: 34px 0 0;
+            float: left;
+            h1 {
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2px;
+                color: #fff;
+                margin: -4px 0 0;
+                float: left;   
+                em {
+                    color: #fffd46;
+                }
+            }
+        }
+        .ip {
+            width: 258px;
+            margin: 36px 0 0;
+            float: right;
+            a {
+                width: 100%;
+                height: 44px;
+                background: #A885DD;
+                font-family: 'Ubuntu', sans-serif;
+                text-align: center;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 44px;
+                text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 0 30px rgba(119, 55, 221, 0.4);
+                border-radius: 20px;
+                float: left;
+                &:hover {
+                    box-shadow: 0 0 30px #A885DD;
+                }  
+                em {
+                    color: #f5d22c; 
+                }
+            } 
+            p {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 14px;
+                color: #f5d22c;
+                text-align: center; 
+            }
+        }
+    }
+    /* ========== VIDEO AREA ==========*/
+    .tutorial {
+        width: 100%;
+        background: #1e1e1e;
+        // .video {
+        //     height: 405px;
+        //     width: 720px;
+        //     padding: 20px;
+        //     background: #A885DD;
+        //     float: left;
+        // }
+    }
+      /* ========== JOINING STEPS ==========*/
+      .step-by-step {
+        width: 410px;
+        margin: 0 auto;
+        float: right;
+        ol {
+            list-style-type: none;
+            margin: 0;
+            margin-left: 1em;
+            padding: 0;
+            counter-reset: li-counter; 
+            li {
+                position: relative;
+                margin-bottom: 1.5em;
+                padding: 0.5em;
+                background-color: #fffd46;
+                padding-left: 58px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-family: 'Ubuntu', sans-serif;  
+        }
+        li:hover {
+            box-shadow: inset -1em 0 #A885DD;
+            transition: box-shadow 0.5s;
+        }
+        ol li:before {
+            position: absolute;
+            top: -0.3em;
+            left: -0.5em;
+            width: 1.8em;
+            height: 1.2em;
+            font-size: 2em;
+            line-height: 1.2;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            background-color: #A885DD;
+            transform: rotate(-20deg);
+            z-index: 99;
+            overflow: hidden;
+            content: counter(li-counter);
+            counter-increment: li-counter;
+        }
+      }
+}
