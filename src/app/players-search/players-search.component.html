@@ -8,14 +8,14 @@
             </div>
             <div class="info">
                <h1>Vidsify's Profile</h1>
-               <p class="rank developer">Developer</p>
-               <p class="rank creator">Creator</p>
+               <p class="rank developer">Developer</p> <!-- RANKS WILL BE IMPLEMENTED VIA API THROUGH DOM??-->
+               <p class="rank creator">Creator</p> <!-- RANKS WILL BE IMPLEMENTED VIA API THROUGH DOM??-->
             </div>
          </div>
          <div class="status-box col-md-6">
-            <div class="status online">
-               <h4>Offline</h4>
-               <p>I'm am the Captain now!</p>
+            <div class="status online"> <!-- ONLINE WILL BE IMPLEMENTED USING API-->
+               <h4>Online</h4>
+               <p>I'm am the Captain now!</p> <!-- THIS WILL BE A LAST SEEN INPUT PLUS WHEREABOUTS IF ONLINE-->
             </div>
          </div>
       </div>
@@ -56,16 +56,110 @@
                   </dl>
                </div>
             </div>
-               <div class="justify-content-start">
+               <div class="justify-content-end">
                   <h2>Achievements</h2>
-                  <div class="container"></div>
+                  <div class="container">
+                     <div class="achievementsSection"> <!-- THIS MOST PROBABLY COULD BE IMPLEMENTED VIA API SO ITS DRY-->
+                        <ul class="achievements">
+                           <li class="completed" data-name="Welcome to the Kingdom" data-description="Connect to Palace for the first time">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Pens at the ready!" data-description="Get your first Autograph">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Travelling is fun!!" data-description="Use your MagicBand for the first time">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Have a magical day!" data-description="Visit The Magic Kingdom">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Experimental Prototype Community of Tomorrow" data-description="Visit Epcot">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Lights, Camera, Action!" data-description="Visit Hollywood Studios">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Explore the world of Animals!" data-description="Visit Animal Kingdom">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Splish Splash!" data-description="Visit Typhoon Lagoon">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="We're Sailing Away!" data-description="Visit Disney Cruise Line">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="It's kind of fun to do the impossible." data-description="Claim your first Plot">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Room Service!" data-description="Rent your first Hotel Room">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="What time is the 3 o'clock parade?" data-description="View the Show Timetable">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="That's what a ride is like!" data-description="Ride 1 ride">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Ride Enthusiast" data-description="Ride 10 different rides">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Super Ride Enthusiast" data-description="Ride 20 different rides">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Ultimate Ride Enthusiast" data-description="Ride 30 different rides">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Music to my ears!" data-description="Connect to the Audio Server">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Make a wish!" data-description="Watch Wishes!">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="We Go On" data-description="Watch Illuminations: Reflections of Earth">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Dream a Fantastic Dream!" data-description="Watch Fantasmic!">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="This is not the show you're looking for" data-description="Watch Symphony in the Stars">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Experience the Movies!" data-description="Visit Universal Studios Orlando">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Celebrate the New Year" data-description="Watch one of our New Year's celebration shows!">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="What an artist!" data-description="Help paint a mural for the Festival of the Arts!">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Celebration in the Streets!" data-description="Watch the Festival of Fantasy Parade">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Tale As Old As Time" data-description="Watch Beauty and the Beast">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="Somewhere Beyond the Sea" data-description="Watch Finding Nemo: The Musical">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="The Cold Never Bothered Me Anyway" data-description="Watch Frozen: Live at the Hyperion">
+                              <div class="achievementIcon"></div>
+                           </li>
+                           <li class="completed" data-name="You unlock this achievement with the key of imagination" data-description="Ride The Twilight Zone Tower of Terror">
+                              <div class="achievementIcon"></div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
-         </div>
+            </div>
          </div>
       </mat-tab>
-      <mat-tab label="Parks">
-      </mat-tab>
+
+      <mat-tab label="Parks"></mat-tab>
+
       <mat-tab label="Arcade">Content 3</mat-tab>
+
     </mat-tab-group>
    <!-- </div> -->
 </div>
