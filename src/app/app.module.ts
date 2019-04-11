@@ -17,6 +17,7 @@ import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule
 	MatCardModule, MatDividerModule, MatChipsModule, MatProgressSpinnerModule, MatButtonModule,
 	MatDialogModule, MatListModule, MatGridListModule } from '@angular/material';
 import { PlayComponent } from './play/play.component';
+import { StafflistComponent } from './stafflist/stafflist.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PlayComponent } from './play/play.component';
     HomeComponent,
     PlayersComponent,
     PlayersSearchComponent,
-    PlayComponent
+    PlayComponent,
+    StafflistComponent
   ],
   imports: [
     BrowserModule,
