@@ -67,3 +67,18 @@
         height: 250px;
     }
 }
+.pl__activity-feed-alt {
+    padding: 0.5em 0.4em;
+    background-color: none;
+    h2 {
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1em;
+    }
+    p {
+        line-height: 1.2;
+        padding: 5px 15px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
