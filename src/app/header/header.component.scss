@@ -83,8 +83,17 @@
             margin: 40px auto;
             line-height: 25px;
         }
+        .btn-red {
+            background-color: #ff6b6b;
+        }
         .btn:hover {
             background: #019dd6;
+        }
+        a { 
+            color: white;
+        }
+        a:hover {
+            text-decoration: none;
         }
     }
     .pl__jumbotron__radio-section {
