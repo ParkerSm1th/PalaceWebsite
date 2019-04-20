@@ -1,5 +1,6 @@
 <header class="header">
   <div class="pl__nav">
+    <div class="pl__nav-brand"><img src="../../assets/Header_Component_Images/pl_logo_blank.png"></div>
     <nav>
       <ul>
         <li class="nav-item" *ngFor="let route of routes">
@@ -7,6 +8,14 @@
         </li>
       </ul>
     </nav>
+  </div>
+  <div class="pl__nav__social">
+      <ul>
+        <li><a href=""><fa-icon [icon]="faFacebookSquare"></fa-icon></a></li>
+        <li><a href=""><fa-icon [icon]="faTwitterSquare"></fa-icon></a></li>
+        <li><a href=""><fa-icon [icon]="faInstagram"></fa-icon></a></li>
+        <li><a href=""><fa-icon [icon]="faDiscord"></fa-icon></a></li>
+      </ul>
   </div>
 </header>
 <div class="pl__jumbotron">

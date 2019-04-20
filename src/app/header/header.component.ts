@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTwitterSquare, faFacebookSquare, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'pl-header',
@@ -9,7 +10,10 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit {
   routes;
   faInfoCircle = faInfoCircle;
-  host = 'palace.network';
+  faTwitterSquare = faTwitterSquare;
+  faFacebookSquare = faFacebookSquare;
+  faInstagram = faInstagram;
+  faDiscord = faDiscord;
 
   constructor() { }
 
