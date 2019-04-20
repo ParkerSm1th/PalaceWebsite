@@ -7,9 +7,9 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
   routes;
   faInfoCircle = faInfoCircle;
+  host = 'palace.network';
 
   constructor() { }
 
