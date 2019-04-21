@@ -1,3 +1,7 @@
+@mixin badge-margin {
+    margin-left: 5px;
+}
+
 .profile {
     padding-bottom: 20px;
     .header {
@@ -46,6 +50,7 @@
                     &.creator {
                         background: #5555FF;
                         margin-left: 5px;
+                        margin-top: 5px; //NEEDS TO BE MADE INTO AN IF STATEMENT SO THAT ITS NOT RUN WHEN THERE ISN'T A SPONSOR RANK
                     }
                     &.dweller {
                         background: #55FFFF;
@@ -61,18 +66,23 @@
                     }
                     &.iron {
                         background: #AAAAAA;
+                        @include badge-margin;
                     }
                     &.gold {
                         background: #FFFF55;
+                        @include badge-margin;
                     }
                     &.lapis {
                         background: #0000AA;
+                        @include badge-margin;
                     }
                     &.diamond {
                         background: #55FFFF;
+                        @include badge-margin;
                     }
                     &.emerald {
                         background: #55FF55;
+                        @include badge-margin;
                     }
                     &.sg {
                         background: #AA00AA;
