@@ -10,7 +10,7 @@ import { ParksComponent } from './parks/parks.component';
 const routes: Routes = [
 	{ path: 'home', component: HomeComponent },
   { path: 'staff', component: StafflistComponent },
-  { path: 'players', component: PlayersComponent },
+  { path: 'players', component: PlayersSearchComponent },
   { path: 'profile', component: PlayersSearchComponent },
   { path: 'parks', component: ParksComponent},
 	{ path: '', redirectTo: 'home', pathMatch: 'full'},
