@@ -189,6 +189,10 @@ padding: 1em 2em;
 padding-bottom: 150px;
 width: 925px;
 background-color: #f3f3f3;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+  }
 }
 
 .pl__achievements {
@@ -202,8 +206,9 @@ background-color: #f3f3f3;
 .pl__general-stats {
 position: relative;
 margin-bottom: 20px;
+margin-top: 20px;
 padding: 5px 10px;
-height: 500px;
+height: 400px;
 max-width: 422px;
 background-color: #f3f3f3;
 .stats {
