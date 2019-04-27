@@ -1,3 +1,7 @@
+@mixin badge-margin {
+    margin-left: 5px;
+}
+
 .profile {
     padding-bottom: 20px;
     .header {
@@ -46,6 +50,7 @@
                     &.creator {
                         background: #5555FF;
                         margin-left: 5px;
+                        margin-top: 5px; //NEEDS TO BE MADE INTO AN IF STATEMENT SO THAT ITS NOT RUN WHEN THERE ISN'T A SPONSOR RANK
                     }
                     &.dweller {
                         background: #55FFFF;
@@ -61,18 +66,23 @@
                     }
                     &.iron {
                         background: #AAAAAA;
+                        @include badge-margin;
                     }
                     &.gold {
                         background: #FFFF55;
+                        @include badge-margin;
                     }
                     &.lapis {
                         background: #0000AA;
+                        @include badge-margin;
                     }
                     &.diamond {
                         background: #55FFFF;
+                        @include badge-margin;
                     }
                     &.emerald {
                         background: #55FF55;
+                        @include badge-margin;
                     }
                     &.sg {
                         background: #AA00AA;
@@ -165,77 +175,77 @@
             }
         }
     }
-/* =============== First Page - Statistics ===============*/
-/* ===== General =====*/
-.profileContent {
-	padding-left: 45px;
-  padding-top: 0;
-  h2 {
-    font-size: 22px;
-    font-weight: 400;
-    color: #343637;
-    margin-bottom: 7px;
-  }
-  .statsSection {
-    width: 49%;
-    _float: left;
-    display: inline-block;
-    .statRow {
-      padding-right: 45px;
-      line-height: 30px;
-      dl {
-        color: #5d6165;
-        dt, dd {
-          float: left;
-          width: 50%;
-          font-size: 13px
-        }
-        dd {
-          text-align: right;
-          color: #5d6165;
-          font-weight: 700
-        }
-      }
-    }
-  }
-/* ===== Achievements =====*/
 
-.achievementsSection {
-	float: left;
-	width: 50%;
-    margin-bottom: 16px;
-    .achievements {
-        li {
-            height: 55px;
-            width: 55px;
-            background: #ddd;
-            display: inline-block;
-            margin-right: 3px;
-            margin-bottom: 3px;
-            background: url(../../assets/PlayerSearch_Component_Images/pl-achievement-empty.png) center center no-repeat;
-            border-radius: 3px;
-            &.completed {
-                background-image: url(../../assets/PlayerSearch_Component_Images/pl-achievement.png);
-            }
-            .achievementIcon {
-                width: inherit;
-                height: inherit;
-                background: 0 0;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 55px 55px;
-                opacity: .3;
-                background-image: url(../../assets/PlayerSearch_Component_Images/unknown.png);
-            }
+
+.container {
+max-width: 1500px;
+margin-top: 3em;
+}
+
+.pl__global-stats {
+position: relative;
+margin-bottom: 100px;
+padding: 1em 2em;
+padding-bottom: 150px;
+width: 925px;
+background-color: #f3f3f3;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+  }
+}
+
+.pl__achievements {
+padding: 0.5em 0.4em;
+background-color: #f3f3f3;
+height: 500px;
+max-width: 422px;
+background-color: #f3f3f3;
+}
+
+.pl__general-stats {
+position: relative;
+margin-bottom: 20px;
+margin-top: 20px;
+padding: 5px 10px;
+height: 400px;
+max-width: 422px;
+background-color: #f3f3f3;
+.stats {
+    width: 100%;
+    margin: 0 0 40px 0;
+    float: left;
+    li {
+        background: #eaeaea;
+        height: 50px;
+        width: 100%;
+        padding: 0 20px 0 20px;
+        border-radius: 5px;
+        float: left;
+        a, p, span {
+            width: auto;
+            height: 50px;
+            line-height: 50px;
+            float: left;
         }
+        a {
+            font-size: 22px;
+            margin: 0 12px 0 0;
+            font-weight: normal;
+        }
+        span {
+            font-family: "Montserrat", Arial;
+            font-size: 19px;
+            color: #989797;
+            letter-spacing: -1px;
+            float: right;
+        }
+    }
+    li+li {
+        margin: 6px 0 0 0;
     }
 }
 
-} //End of General Styles
-
-
-/* =============== Second Page - Parks ===============*/
-
-/* =============== Second Page - Arcade ===============*/
+}
 
 }
