@@ -1,0 +1,43 @@
+.pl__player-search__container {
+    position: relative;
+    margin: 20px auto;
+    padding: 1em 2em;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 15px;
+    background: url('../../assets/CommunityComponentAssets/search_bg.png');
+    border: 2px solid #ffcc00;
+    .pl__player-search__input {
+        margin: 50px auto;
+        height: 60px;
+        width: 550px;
+        background-color: #c4c4c4;
+        border-radius: 30px;
+        padding: 10px;
+        input {
+            color: #7e7e7e;
+            border: 0;
+            outline: 0;
+            background: none;
+            width: 0;
+            caret-color:transparent;
+            line-height: 40px;
+            transition: width 0.4s linear;        
+            padding: 0 10px;
+            width: 450px;
+            caret-color: white;
+            transition: width 0.4s linear;
+        }
+        a {
+            height: 40px;
+            width: 40px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #0a0808;
+            background: white;
+        }
+    }
+}

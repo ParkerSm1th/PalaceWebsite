@@ -40,6 +40,10 @@ body {
     @extend %pl__section__header--global;
     background-color: #ff6b6b;
 }
+.container {
+    max-width: 1400px;
+    margin-top: 3em;
+}
 .pl__activity-feed {
     position: relative;
     margin-bottom: 20px;

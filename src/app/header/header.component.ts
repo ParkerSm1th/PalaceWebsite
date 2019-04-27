@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faFacebookSquare, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { element } from '@angular/core/src/render3';
 
 @Component({
   selector: 'pl-header',
@@ -49,5 +50,16 @@ export class HeaderComponent implements OnInit {
       }
     ];
   }
+  // @HostListener('window:scroll', ['$event'])
+  // onWindowScroll(e) {
+  //   if (this.currentRoute === '/home') {
+  //     if (window.pageYOffset > 100) {
+  //       element.classList.add('fixed');
+  //     } else {
+  //       const element = document.getElementById('header');
+  //       element.classList.remove('fixed');
+  //     }
+  //   }
+  // }
 
 }

@@ -19,6 +19,7 @@ import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule
 import { PlayComponent } from './play/play.component';
 import { StafflistComponent } from './stafflist/stafflist.component';
 import { ParksComponent } from './parks/parks.component';
+import { CommunityComponent } from './community/community.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ParksComponent } from './parks/parks.component';
     PlayersSearchComponent,
     PlayComponent,
     StafflistComponent,
-    ParksComponent
+    ParksComponent,
+    CommunityComponent
   ],
   imports: [
     BrowserModule,
