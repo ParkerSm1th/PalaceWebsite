@@ -1,12 +1,13 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faFacebookSquare, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { element } from '@angular/core/src/render3';
+import { DOCUMENT } from '@angular/common';
+
 
 @Component({
   selector: 'pl-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   routes;
@@ -16,7 +17,7 @@ export class HeaderComponent implements OnInit {
   faInstagram = faInstagram;
   faDiscord = faDiscord;
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) document) { }
 
   ngOnInit() {
     this.routes = [
@@ -49,6 +50,16 @@ export class HeaderComponent implements OnInit {
         name: 'Help & Support'
       }
     ];
+  }
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+    if (window.pageYOffset > 100) {
+      const element = document.getElementById('header');
+      element.classList.add('fixed');
+    } else {
+      const element = document.getElementById('header');
+      element.classList.remove('fixed');
+    }
   }
   // @HostListener('window:scroll', ['$event'])
   // onWindowScroll(e) {
