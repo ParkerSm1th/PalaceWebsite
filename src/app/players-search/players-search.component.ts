@@ -6,6 +6,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faCar } from '@fortawesome/free-solid-svg-icons'
 import { faTrophy } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faFortAwesome } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'pl-players-search',
@@ -21,6 +22,7 @@ export class PlayersSearchComponent implements OnInit {
   faCar = faCar;
   faTrophy = faTrophy;
   faStar = faStar;
+  faFortAwesome = faFortAwesome;
 
   constructor() { }
 

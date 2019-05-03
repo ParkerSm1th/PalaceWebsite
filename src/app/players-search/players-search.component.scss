@@ -4,11 +4,13 @@
 
 .profile {
     padding-bottom: 20px;
+    /* ========== PROFILE HEADER ========== */
     .header {
         height: 210px;
         width: 100%;
         margin: 0 0 40px 0;
         background: url(../../assets/Player_Component_Images/player_search.png) top center no-repeat #202020;
+        border-bottom: solid 2px #AA00AA;
         .overview {
             width: 700px;
             padding-left: 300px; //ONLY USED WHEN CONTAINER DISABLED
@@ -144,9 +146,9 @@
                         right: 20px;
                         background: #b5eb53e5;
                         border-radius: 9px;
-                        animation: online-pulse 2s infinite;
+                        animation: online 2s infinite;
                     }
-                    @keyframes online-pulse {
+                    @keyframes online {
                         0% {
                             opacity: 0.25;
                         }
@@ -176,32 +178,52 @@
         }
     }
 
-
-.container {
-max-width: 1500px;
-margin-top: 3em;
-}
+/* ========== GLOBAL STATS ========== */
 
 .pl__global-stats {
 position: relative;
 margin-bottom: 100px;
 padding: 1em 2em;
-padding-bottom: 150px;
+// padding-bottom: 150px;
 width: 925px;
-background-color: #f3f3f3;
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-  }
+background-color: #f3f3f3; //With or without?
+border-radius: 5px;
 }
+
+/* ========== ACHIEVEMENTS ========== */
 
 .pl__achievements {
 padding: 0.5em 0.4em;
-background-color: #f3f3f3;
-height: 500px;
+// background-color: #f3f3f3;
+// height: 500px;
 max-width: 422px;
-background-color: #f3f3f3;
+.achievements {
+    background: url(../../assets/Profile_Component_Images/blank-achievement.png) top left repeat-y #f0f0f0;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+    border-radius: 20px;
+    float: left;
+    li {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        text-align: center;
+        font-size: 42px;
+        margin: 20px 0 0 20px;
+        border-radius: 10px;
+        position: relative;
+        float: left;
+    }
 }
+}
+
+/* ========== GENERAL STATS ========== */
+
+.container {
+    max-width: 1500px;
+    margin-top: 3em;
+    }
 
 .pl__general-stats {
 position: relative;
@@ -210,7 +232,8 @@ margin-top: 20px;
 padding: 5px 10px;
 height: 400px;
 max-width: 422px;
-background-color: #f3f3f3;
+background-color: #f3f3f3; //With or without?
+border-radius: 5px;
 .stats {
     width: 100%;
     margin: 0 0 40px 0;
