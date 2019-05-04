@@ -1,19 +1,24 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import 'reset';
-body {
-    height: 100%;
-    width: 100%;
+@import 'theme';
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+
+
+body {
     line-height: 1.5;
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(230, 236, 240);
     // overflow-x: hidden;
 }
 %pl__section__header--global {
-    color: white;
-    background-color: #feca57;
+    color: $typography-2;
+    background-color: $palace-gold;
     border-radius: 30px;
     text-align: center;
     font-size: 25px;
@@ -50,19 +55,20 @@ body {
     padding: 5px 10px;
     height: 500px;
     max-width: 422px;
-    background-color: #f3f3f3;
+    background-color: $card-bg-1;
     .pl__activity-feed__item {
         margin-top: 10px;
         margin-bottom: 10px;
         border-radius: 5px;
         padding: 0.5em 0.6em;
         width: 100%;
-        background-color: #e7e7e7;
+        background-color: $card-bg-2;
 
         p {
             position: relative;
             top: 2px;
             font-size: 15px;
+            color: $typography-3;
             img {
                 height: 48px;
                 width: 48px;
