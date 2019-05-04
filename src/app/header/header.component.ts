@@ -33,22 +33,18 @@ export class HeaderComponent implements OnInit {
         route: 'parks',
         name: 'Theme Parks',
       },
-      {
+      /*{
         route: 'mini-games',
         name: 'Mini Games'
-      },
+      },*/
       {
         route: 'creative',
         name: 'Creative',
       },
-      {
+      /*{
         route: 'players',
         name: 'Players'
-      },
-      {
-        route: 'support',
-        name: 'Help & Support'
-      }
+      },*/
     ];
   }
   @HostListener('window:scroll', ['$event'])

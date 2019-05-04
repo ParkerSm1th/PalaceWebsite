@@ -20,6 +20,7 @@ import { PlayComponent } from './play/play.component';
 import { StafflistComponent } from './stafflist/stafflist.component';
 import { ParksComponent } from './parks/parks.component';
 import { CommunityComponent } from './community/community.component';
+import { CreativeComponent } from './creative/creative.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CommunityComponent } from './community/community.component';
     PlayComponent,
     StafflistComponent,
     ParksComponent,
-    CommunityComponent
+    CommunityComponent,
+    CreativeComponent
   ],
   imports: [
     BrowserModule,

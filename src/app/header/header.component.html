@@ -6,6 +6,7 @@
         <li class="nav-item" *ngFor="let route of routes">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/' + route.route]">{{route.name}}</a>
         </li>
+        <li class="nav-item"><a class="nav-link" href="https://support.palace.network/">Help & Support</a></li>
       </ul>
     </nav>
   </div>
@@ -21,7 +22,7 @@
       <div class="col"><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></div>
       <div class="col pl__jumbotron__play-section">
         <p>Want to support <span>Palace Network</span>?</p>
-        <button class="btn btn-red">Click here to shop!</button>
+        <button class="btn btn-red"><a href="https://store.palace.network" target="_blank">Click here to shop!</a></button>
       </div>
       <!-- <div class="col pl__jumbotron__radio-section">
         <div class="container pl__radio__container">
