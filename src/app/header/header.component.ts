@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
   }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 5) {
       const element = document.getElementById('header');
       element.classList.add('fixed');
     } else {
@@ -57,16 +57,5 @@ export class HeaderComponent implements OnInit {
       element.classList.remove('fixed');
     }
   }
-  // @HostListener('window:scroll', ['$event'])
-  // onWindowScroll(e) {
-  //   if (this.currentRoute === '/home') {
-  //     if (window.pageYOffset > 100) {
-  //       element.classList.add('fixed');
-  //     } else {
-  //       const element = document.getElementById('header');
-  //       element.classList.remove('fixed');
-  //     }
-  //   }
-  // }
 
 }
