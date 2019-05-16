@@ -16,7 +16,6 @@ import { MatSnackBarModule, MatTooltipModule, MatFormFieldModule, MatInputModule
 	MatPaginatorModule, MatTabsModule, MatDatepickerModule, MatNativeDateModule,
 	MatCardModule, MatDividerModule, MatChipsModule, MatProgressSpinnerModule, MatButtonModule,
 	MatDialogModule, MatListModule, MatGridListModule } from '@angular/material';
-import { PlayComponent } from './play/play.component';
 import { StafflistComponent } from './stafflist/stafflist.component';
 import { ParksComponent } from './parks/parks.component';
 import { CommunityComponent } from './community/community.component';
@@ -30,7 +29,6 @@ import { CreativeComponent } from './creative/creative.component';
     HomeComponent,
     PlayersComponent,
     PlayersSearchComponent,
-    PlayComponent,
     StafflistComponent,
     ParksComponent,
     CommunityComponent,
