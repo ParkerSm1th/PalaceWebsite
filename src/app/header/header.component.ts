@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { faInfoCircle, faPlayCircle, faStore } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faPlayCircle, faStore, faServer } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faFacebookSquare, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { DOCUMENT } from '@angular/common';
 
@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
   faDiscord = faDiscord;
   faPlayCircle = faPlayCircle;
   faStore = faStore;
+  faServer = faServer;
 
   constructor(@Inject(DOCUMENT) document) { }
 
@@ -49,8 +50,18 @@ export class HeaderComponent implements OnInit {
       },*/
     ];
   }
+  @HostListener('window:scroll', ['$event'])
+    onWindowScroll(e) {
+      if (window.pageYOffset > 250) {
+        const element = document.getElementById('header');
+        element.classList.add('fixed');
+      } else {
+        const element = document.getElementById('header');
+        element.classList.remove('fixed');
+      }
+    }
   // @HostListener('window:scroll', ['$event'])
-  // onWindowScroll(e) {
+  //   onWindowScroll(e) {
   //   if (window.pageYOffset > 100) {
   //     const element = document.getElementById('header');
   //     element.classList.add('fixed');
