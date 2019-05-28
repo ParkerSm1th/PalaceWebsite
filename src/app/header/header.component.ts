@@ -12,8 +12,8 @@ import { DOCUMENT } from '@angular/common';
 export class HeaderComponent implements OnInit {
   routes;
   faInfoCircle = faInfoCircle;
-  faTwitterSquare = faTwitterSquare;
-  faFacebookSquare = faFacebookSquare;
+  faTwitter = faTwitterSquare;
+  faFacebook = faFacebookSquare;
   faInstagram = faInstagram;
   faDiscord = faDiscord;
   faPlayCircle = faPlayCircle;
@@ -52,7 +52,7 @@ export class HeaderComponent implements OnInit {
   }
   @HostListener('window:scroll', ['$event'])
     onWindowScroll(e) {
-      if (window.pageYOffset > 250) {
+      if (window.pageYOffset > 150) {
         const element = document.getElementById('header');
         element.classList.add('fixed');
       } else {
