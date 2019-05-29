@@ -44,6 +44,10 @@ export class HeaderComponent implements OnInit {
         route: 'creative',
         name: 'Creative',
       },
+      {
+        route: 'profile',
+        name: 'Profile Quick Link',
+      },
       /*{
         route: 'players',
         name: 'Players'
