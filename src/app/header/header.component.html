@@ -20,7 +20,7 @@
   </div>
 </header>
 
-
+ 
 
 <div class="pl__jumbotron">
   <div><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></div>
@@ -29,7 +29,7 @@
       <div class="col pl__jumbotron__play-section">
         <p class="pl__jumbotron__ip">IP Address: <span>play.palace.network</span></p>
         <button class="btn btn-blue"><a href="https://forums.palace.network/topic/6120-how-to-join-our-minecraft-server/" target="_blank"><fa-icon [icon]="faPlayCircle"></fa-icon> Play Now!</a></button>
-        <p>There are currently <span>0</span> guests online!</p>
+        <p>There are currently <span *ngIf="loading else loaded"><fa-icon [icon]="faSpinner" [spin]="true"></fa-icon></span> <ng-template #loaded><span>{{ playerCount }}</span></ng-template> guests online!</p>
       </div>
       <div class="col pl__jumbotron__play-section">
         <p>Want to support <span>Palace Network</span>?</p>

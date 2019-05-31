@@ -43,6 +43,18 @@ export class DataService {
         return this.http.get(updateUrl, {responseType: 'text'});
     }
 
+    /**
+	 * Retrieve the current online players
+	 *
+	 * @returns
+	 * @memberof DataService
+	 */
+	getPlayers() {
+
+        let url = 'https://api.mcsrvstat.us/2/play.palace.network';
+        return this.http.get(url);
+    }
+
 
 }
 

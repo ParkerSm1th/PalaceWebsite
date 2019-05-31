@@ -1,7 +1,8 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { faInfoCircle, faPlayCircle, faStore, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faPlayCircle, faStore, faServer, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faFacebookSquare, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { DOCUMENT } from '@angular/common';
+import { DataService } from '../jsonData/data.service';
 
 
 @Component({
@@ -19,10 +20,22 @@ export class HeaderComponent implements OnInit {
   faPlayCircle = faPlayCircle;
   faStore = faStore;
   faServer = faServer;
+  faSpinner = faSpinner;
+  playerCount = 0;
+  loading = true;
 
-  constructor(@Inject(DOCUMENT) document) { }
+  constructor(@Inject(DOCUMENT) document, private dataService: DataService) { }
+
+  getPlayers(): void {
+    this.dataService.getPlayers().subscribe(data => {
+      console.log(data['players']['online']);
+      this.playerCount = data['players']['online'];
+      this.loading = false;
+    })
+  }
 
   ngOnInit() {
+    setInterval(() => this.getPlayers(), 3000);
     this.routes = [
       {
         route: 'home',
