@@ -28,7 +28,6 @@ export class HeaderComponent implements OnInit {
 
   getPlayers(): void {
     this.dataService.getPlayers().subscribe(data => {
-      console.log(data['players']['online']);
       this.playerCount = data['players']['online'];
       this.loading = false;
     })
