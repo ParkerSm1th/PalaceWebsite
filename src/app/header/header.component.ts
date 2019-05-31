@@ -34,6 +34,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getPlayers();
     setInterval(() => this.getPlayers(), 3000);
     this.routes = [
       {
