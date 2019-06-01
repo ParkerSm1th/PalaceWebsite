@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     this.dataService.getPlayers().subscribe(data => {
       this.playerCount = data['players']['online'];
       this.loading = false;
-    })
+    });
   }
 
   ngOnInit() {

@@ -31,17 +31,16 @@ export class DataService {
 		return this.http.get<Player>(`${this.base}/player/${username}?${this.getQueryParams()}`);
     }
 
-    /**
-	 * Retrieve the most recent announcements from forums
-	 *
-	 * @returns
-	 * @memberof DataService
-	 */
-	getUpdate() {
-
-        let updateUrl = 'https://forums.palace.network/forum/3-announcements-news.xml';
-        return this.http.get(updateUrl, {responseType: 'text'});
-    }
+    // /**
+	//  * Retrieve the most recent announcements from forums
+	//  *
+	//  * @returns
+	//  * @memberof DataService
+	//  */
+	// getNews() {
+    //     let url = 'https://forums.palace.network/api/'
+    //     return this.http.get()
+    // }
 
     /**
 	 * Retrieve the current online players
@@ -50,11 +49,9 @@ export class DataService {
 	 * @memberof DataService
 	 */
 	getPlayers() {
-
         let url = 'https://api.mcsrvstat.us/2/play.palace.network';
         return this.http.get(url);
     }
 
 
 }
-
