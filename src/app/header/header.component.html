@@ -23,17 +23,17 @@
  
 
 <div class="pl__jumbotron">
-  <div class="header_logo"><a href="#"><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></a></div>
+  <div><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></div>
   <div class="container-fluid">
     <div class="row pl__compress">
       <div class="col pl__jumbotron__play-section">
         <p class="pl__jumbotron__ip">IP Address: <span>play.palace.network</span></p>
-        <button class="btn btn-blue"><a href="https://forums.palace.network/topic/6120-how-to-join-our-minecraft-server/" target="_blank"><fa-icon [icon]="faPlayCircle"></fa-icon> Play Now!</a></button>
+        <a href="https://forums.palace.network/topic/6120-how-to-join-our-minecraft-server/" target="_blank" class="btn btn-blue"><fa-icon [icon]="faPlayCircle"></fa-icon> PLay Now!</a>
         <p>There are currently <span *ngIf="loading else loaded"><fa-icon [icon]="faSpinner" [spin]="true"></fa-icon></span> <ng-template #loaded><span>{{ playerCount }}</span></ng-template> guests online!</p>
       </div>
       <div class="col pl__jumbotron__play-section">
         <p>Want to support <span>Palace Network</span>?</p>
-        <button class="btn btn-red"><a href="https://store.palace.network" target="_blank"><fa-icon [icon]="faStore"></fa-icon> Visit our store</a></button>
+        <a href="https://store.palace.network" target="_blank" class="btn btn-red"><fa-icon [icon]="faStore"></fa-icon> Visit out store</a>
         <p>Text needs to go here</p>
       </div>
 </div>
