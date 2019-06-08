@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faFacebookF, faTwitter, faYoutube, faInstagram, faDiscord} from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faYoutube, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faKeyboard } from '@fortawesome/pro-solid-svg-icons';
 
 @Component({
   selector: 'pl-footer',
@@ -14,6 +15,7 @@ export class FooterComponent implements OnInit {
   faYoutube = faYoutube;
   faInstagram = faInstagram;
   faDiscord = faDiscord;
+  faKeyboard = faKeyboard;
 
 
 
