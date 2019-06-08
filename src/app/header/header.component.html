@@ -1,6 +1,6 @@
 <header id="header" class="pl__header">
   <div class="pl__nav">
-    <div class="pl__nav__brand"><img src="../../assets/Header_Component_Images/pl_logo_blank.png"></div>
+    <div class="pl__nav__brand"><a href="#"><img src="../../assets/Header_Component_Images/pl_logo_blank.png"></a></div>
     <nav>
       <ul>
         <li class="nav-item" *ngFor="let route of routes">
@@ -12,10 +12,10 @@
   </div>
   <div class="pl__nav__social">
     <ul>
-      <li><a href="https://twiter.com/palacenetwork"><fa-icon [icon]="faTwitter"></fa-icon></a></li>
-      <li><a href="https://facebook.com/palacenetworkmc"><fa-icon [icon]="faFacebook"></fa-icon></a></li>
-      <li><a href="https://instagram.com/palacenetwork"><fa-icon [icon]="faInstagram"></fa-icon></a></li>
-      <li><a href="https://discord.gg/palace"><fa-icon [icon]="faDiscord"></fa-icon></a></li>
+      <li><a target="_blank" href="https://twitter.com/palacenetwork"><fa-icon [icon]="faTwitter"></fa-icon></a></li>
+      <li><a target="_blank" href="https://facebook.com/palacenetworkmc"><fa-icon [icon]="faFacebook"></fa-icon></a></li>
+      <li><a target="_blank" href="https://instagram.com/palacenetwork"><fa-icon [icon]="faInstagram"></fa-icon></a></li>
+      <li><a target="_blank" href="https://discord.gg/palace"><fa-icon [icon]="faDiscord"></fa-icon></a></li>
     </ul>
   </div>
 </header>
@@ -23,7 +23,7 @@
  
 
 <div class="pl__jumbotron">
-  <div><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></div>
+  <div class="header_logo"><a href="#"><img class="pl__jumbotron__logo d-block" src="../../assets/Header_Component_Images/palace_logo_fullres.png"></a></div>
   <div class="container-fluid">
     <div class="row pl__compress">
       <div class="col pl__jumbotron__play-section">

@@ -10,9 +10,6 @@ import { CreativeComponent } from './creative/creative.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'staff', component: StafflistComponent },
-  { path: 'players', component: PlayersComponent },
-  { path: 'profile', component: PlayersSearchComponent },
   { path: 'parks', component: ParksComponent },
   { path: 'community', component: CommunityComponent },
   { path: 'creative', component: CreativeComponent },
