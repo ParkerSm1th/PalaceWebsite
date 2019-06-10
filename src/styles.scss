@@ -45,6 +45,10 @@ body {
     @extend %pl__section__header--global;
     background-color: #ff6b6b;
 }
+.pink {
+    @extend %pl__section__header--global;
+    background-color: #f16bdb;
+}
 .container {
     max-width: 1450px;
     margin-top: 3em;
