@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { parseString } from 'xml2js';
+import { DataService } from '../jsonData/data.service';
 // import { HomeService } from './home.service';
 
 
@@ -12,29 +13,21 @@ import { parseString } from 'xml2js';
 
 export class HomeComponent implements OnInit {
 
-  parseString = parseString;
+  news;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
+
 
   ngOnInit() {
-    // this.getUpdates();
+    this.getNews();
   }
 
-  // getUpdates(): void {
-  //   this.dataService.getUpdate().subscribe(data => {
-  //     parseString(data.toString(), function (err, result) {
-  //       console.dir(result);
-  //     });
-  //   })
-  // }
-
-  // getNews() {
-  //   this.homeService.getNews().subscribe(data => {
-  //     parseString(data.toString(), (err, result) => {
-  //       console.log(result);
-  //     });
-  //   });
-  // }
+  getNews() {
+    this.dataService.getNews().subscribe(data => {
+      const news = data.results;
+      this.news = news;
+    });
+  }
 
 
 }

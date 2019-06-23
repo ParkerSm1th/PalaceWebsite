@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Player } from './models/player.model';
+import { Topics } from './models/topics.model';
 
 @Injectable({
     providedIn: 'root',
@@ -37,6 +38,10 @@ export class DataService {
 	//  * @returns
 	//  * @memberof DataService
 	//  */
+	getNews(): Observable<Topics> {
+		// tslint:disable-next-line:max-line-length
+		return this.http.get<Topics>('https://forums.palace.network/api/forums/topics/?sortDir=desc&forums=3&featured=1&key=bad926e6ed14fe04b81d3b5421363c20');
+	}
 	// getNews() {
     //     let url = 'https://forums.palace.network/api/'
     //     return this.http.get()
