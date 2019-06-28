@@ -50,7 +50,7 @@ export class DataService {
     /**
 	 * Retrieve the current online players
 	 *
-	 * @returns
+	 * @returnsx
 	 * @memberof DataService
 	 */
 	getPlayers() {

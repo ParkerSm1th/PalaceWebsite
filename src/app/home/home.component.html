@@ -1,31 +1,11 @@
 <div class="container justify-content-center">
   <div class="row">
-    <div class="col">
+    <div class="col" *ngFor="let post of news">
       <div class="pl__news__item">
         <div class="pl__news__item__top"></div>
         <div class="pl__news__item__bottom">
-          <h2>This is a title</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error maiores magnam cum eius deserunt incidunt iste minima iusto optio quam, saepe neque, beatae quasi illum, quis laudantium totam temporibus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi, repudiandae, accusamus, modi porro expedita commodi sequi nam sed odio cum eum minima velit corrupti eveniet veritatis necessitatibus doloremque! Veritatis.</p>
-          <span><a href="#">Click to read more...</a></span>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="pl__news__item">
-        <div class="pl__news__item__top"></div>
-        <div class="pl__news__item__bottom">
-          <h2>This is a title</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error maiores magnam cum eius deserunt incidunt iste minima iusto optio quam, saepe neque, beatae quasi illum, quis laudantium totam temporibus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi, repudiandae, accusamus, modi porro expedita commodi sequi nam sed odio cum eum minima velit corrupti eveniet veritatis necessitatibus doloremque! Veritatis.</p>
-          <span><a href="#">Click to read more...</a></span>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="pl__news__item">
-        <div class="pl__news__item__top"></div>
-        <div class="pl__news__item__bottom">
-          <h2>This is a title</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error maiores magnam cum eius deserunt incidunt iste minima iusto optio quam, saepe neque, beatae quasi illum, quis laudantium totam temporibus est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi, repudiandae, accusamus, modi porro expedita commodi sequi nam sed odio cum eum minima velit corrupti eveniet veritatis necessitatibus doloremque! Veritatis.</p>
+          <h2>{{post.title}}</h2>
+          <p>{{post.firstPost.content}}</p>
           <span><a href="#">Click to read more...</a></span>
         </div>
       </div>
@@ -34,17 +14,11 @@
   <div class="row">
     <div class="col-lg-8">
       <h2 class="pl__section__header">What's New?</h2>
-      <div class="pl__blog-post">
-        <h2>This is a title <span>Mar. 16th, 2019</span></h2>
+      <div class="pl__blog-post" *ngFor="let post of recentNews">
+        <h2>{{post.title}}<span>Mar. 16th, 2019</span></h2>
         <img src="../../assets/Home_Component_Images/blog_post_thumb.png">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id dignissimos cupiditate quaerat dolorem sit aperiam! Vero illum explicabo optio officiis odio cum dolorum unde nostrum corporis corrupti, earum natus!</p>
-        <p>Nobis rem sit minima inventore ut officiis ipsa harum in, quibusdam eveniet voluptatum nisi natus culpa aspernatur debitis necessitatibus corrupti doloribus totam beatae tenetur, facilis id? Totam quas perspiciatis ullam?</p>
-        <p>Facilis esse ratione doloribus consectetur temporibus corporis laudantium vitae ad aperiam, facere quisquam rerum ipsam itaque nulla excepturi provident amet iure alias iusto consequatur earum. Pariatur rerum aspernatur officiis suscipit!</p>
-        <p>Vitae illo amet dolore obcaecati velit aperiam! Aliquam quia animi harum est consequuntur vel iure deserunt nostrum, laudantium repudiandae nam veritatis amet recusandae alias reiciendis exercitationem pariatur sapiente, cupiditate eveniet?</p>
-        <p>Reprehenderit obcaecati placeat eum, expedita impedit accusantium officia rem doloremque ipsum odit harum! Excepturi repellendus aliquid ipsam molestias commodi voluptatem nostrum. Beatae dolore aliquam magnam at, amet odit architecto voluptas.</p>
-        <p>Repellendus atque praesentium dolorum sit veritatis accusamus fugiat quae tenetur quod deserunt. Totam consectetur quaerat, assumenda hic veritatis blanditiis consequatur exercitationem non optio pariatur laborum sint consequuntur commodi labore reprehenderit.</p>
-        <p>Molestias aliquam veniam voluptates culpa, laboriosam ratione porro nam, iusto adipisci saepe consequatur numquam soluta minima rem distinctio, voluptatem recusandae doloremque? Harum numquam est earum quo velit fugiat, accusamus provident!</p>
-        <p>Sint autem fugiat, accusantium numquam harum magni nostrum vero ab, consequatur vel molestiae distinctio odio culpa quam. Temporibus, cumque illo similique deleniti possimus cupiditate reprehenderit debitis quis autem perferendis enim.</p>
+        <div [innerHTML]="post.firstPost.content"></div>
+
       </div>
     </div>
     <div class="col-lg-4">

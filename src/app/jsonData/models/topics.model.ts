@@ -1,5 +1,5 @@
 export interface Topics {
-    results: {
+    results: [{
         id: number;
         title: string;
         firstPost: {
@@ -14,5 +14,5 @@ export interface Topics {
             content: string;
         };
         url: string;
-    };
+    }];
 }
