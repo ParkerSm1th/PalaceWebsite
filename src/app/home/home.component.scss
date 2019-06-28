@@ -10,6 +10,10 @@
         background-color: #000;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        overflow: hidden;
+    }
+    .pl__news__item__top img {
+        width: 100%;
     }
     .pl__news__item__bottom {
         height: 170px;
@@ -68,7 +72,7 @@
 }
 .pl__activity-feed-alt {
     padding: 0.5em 0.4em;
-    background-color: none;
+    background-color: #f3f3f3;
     h2 {
         font-weight: bold;
         font-size: 18px;

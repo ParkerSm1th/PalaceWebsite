@@ -2,11 +2,13 @@
   <div class="row">
     <div class="col" *ngFor="let post of news">
       <div class="pl__news__item">
-        <div class="pl__news__item__top"></div>
+        <div class="pl__news__item__top">
+          <img src="../../assets/Home_Component_Images/blog_post_thumb.png">
+        </div>
         <div class="pl__news__item__bottom">
           <h2>{{post.title}}</h2>
           <p>{{post.firstPost.content}}</p>
-          <span><a href="#">Click to read more...</a></span>
+          <span><a href="{{post.url}}" target="_blank">Click to read more...</a></span>
         </div>
       </div>
     </div>
@@ -17,7 +19,7 @@
       <div class="pl__blog-post" *ngFor="let post of recentNews">
         <h2>{{post.title}}<span>Mar. 16th, 2019</span></h2>
         <img src="../../assets/Home_Component_Images/blog_post_thumb.png">
-        <div [innerHTML]="post.firstPost.content"></div>
+        <div class="pl__blog-post-div" [innerHTML]="post.firstPost.content"></div>
 
       </div>
     </div>

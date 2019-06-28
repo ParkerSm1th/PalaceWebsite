@@ -40,7 +40,7 @@ export class DataService {
 	//  */
 	getNews(): Observable<Topics> {
 		// tslint:disable-next-line:max-line-length
-		return this.http.get<Topics>('https://forums.palace.network/api/forums/topics/?sortDir=desc&forums=3&featured=1&key=bad926e6ed14fe04b81d3b5421363c20');
+		return this.http.get<Topics>('https://forums.palace.network/api/forums/topics/?sortDir=desc&forums=3&hidden=0&key=bad926e6ed14fe04b81d3b5421363c20');
 	}
 	// getNews() {
     //     let url = 'https://forums.palace.network/api/'
